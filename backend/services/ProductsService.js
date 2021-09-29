@@ -2,6 +2,11 @@ const fetch = require("isomorphic-fetch");
 const { parseProducts } = require("../utils/parser/products");
 const API_ENDPOINTS = require("./apiEndpoints");
 
+/**
+ * Function getProducts
+ * @summary search in the Meli api the keyword that represent a product's name
+ * @param {string} keyword
+ */
 async function getProducts(keyword) {
 	const { path, ...others } = API_ENDPOINTS.products;
 
@@ -29,6 +34,11 @@ async function getProducts(keyword) {
 	}
 }
 
+/**
+ * Function getProductDetails
+ * @summary search in the Meli api the productId of a product to retrieve more details.
+ * @param {string} productId
+ */
 async function getProductDetails(productId) {
 	const { path, ...others } = API_ENDPOINTS.productDetails;
 
@@ -61,6 +71,11 @@ async function getProductDetails(productId) {
 	}
 }
 
+/**
+ * Function getCategories
+ * @summary search in the Meli api the categories with categoryId.
+ * @param {string} categoryId
+ */
 async function getCategories(categoryId) {
 	const { path, ...others } = API_ENDPOINTS.categories;
 
@@ -78,6 +93,11 @@ async function getCategories(categoryId) {
 	}
 }
 
+/**
+ * Function getProductDescription
+ * @summary search in the Meli api the description text of a product.
+ * @param {string} productId
+ */
 async function getProductDescription(productId) {
 	const { path, ...others } = API_ENDPOINTS.productDescription;
 

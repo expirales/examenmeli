@@ -1,5 +1,11 @@
 const ProductsService = require("../services/ProductsService");
 
+/**
+ * Controller Products
+ * @summary handle the request looking for products
+ * @param {*} req
+ * @param {*} res
+ */
 module.exports.products = async (req, res) => {
 	try {
 		const { q: keyword } = req.params;
@@ -10,6 +16,12 @@ module.exports.products = async (req, res) => {
 	}
 };
 
+/**
+ * Controller Products
+ * @summary handle the request looking for one product by id
+ * @param {*} req
+ * @param {*} res
+ */
 module.exports.productDetails = async (req, res) => {
 	try {
 		const { id: productId } = req.params;

@@ -5,6 +5,22 @@ import { PAGES } from "../utils/pages";
 
 import "./Breadcrumb.scss";
 
+/**
+ * @module Breadcrumb
+ * @summary Component to control as a breadcrumb the products categories.
+ * @param `categories` [{id:1, name:"Autos"}]
+ * @example <caption>It can be called as follows:</caption>
+ *            import Breadcrumb from './{path}/Breadcrumb.jsx'
+ *            return (
+ *              <div>
+ *                <Breadcrumb categories={[]} /
+ *              <div/>
+ *            )
+ * @see
+ * Components where used this:
+ *    - ProductsListPage.jsx,
+ *    - ProductDetailsPage.jsx,
+ */
 export default function Breadcrumb({ categories }) {
 	return (
 		<div className="cnt-breadcrumb">

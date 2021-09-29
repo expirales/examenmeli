@@ -3,6 +3,26 @@ import { historyManager } from "../utils/history";
 import { PAGES } from "../utils/pages";
 
 import "./NotFoundMessage.scss";
+
+/**
+ * @module NotFoundMessage
+ * @summary Component to handle no products records to show or invalid search respond
+ * @param `title`
+ * @param `message`
+ * @param `isShowRedirectButton`
+ * @param `redirectButtonLabel`
+ * @example <caption>It can be called as follows:</caption>
+ *            import NotFoundMessage from './{path}/NotFoundMessage.jsx'
+ *            return (
+ *              <div>
+ *                <NotFoundMessage />
+ *              <div/>
+ *            )
+ * @see
+ * Components where used this:
+ *    - ProductsListPage.jsx,
+ *    - ProductDetailsPage.jsx,
+ */
 export default function NotFoundMessage({
 	title = "Ups!",
 	message = "No hemos encontrado nada por aqui.",
