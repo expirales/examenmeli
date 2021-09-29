@@ -1,0 +1,51 @@
+@import "../scss/variables.scss";
+@import "../scss/colors.scss";
+@import "../scss/mixins.scss";
+
+.cnt-product-details {
+	background-color: $color-7;
+	border-radius: $space-0;
+	padding: $space-4;
+
+	.product-details {
+		display: flex;
+
+		.product-img {
+			width: $width-product-item-description;
+		}
+
+		.product-info {
+			margin-left: $space-3;
+			flex-basis: 30%;
+
+			.tx-condition {
+				text-transform: capitalize;
+				font-size: $font-size-2;
+			}
+
+			.tx-name {
+				@include font-styles($font-size-5, $font-weight-4);
+				margin: 16px 0 32px 0;
+			}
+
+			.tx-price {
+				@include font-styles($font-size-7, $font-weight-3);
+				margin: 32px 0px;
+			}
+
+			.btn-buy {
+				@include btn-buy;
+			}
+		}
+	}
+
+	.tt-description {
+		@include font-styles($font-size-6, $font-weight-4);
+		margin-bottom: $space-4;
+	}
+
+	.tx-description {
+		font-size: $font-size-3;
+		text-align: justify;
+	}
+}

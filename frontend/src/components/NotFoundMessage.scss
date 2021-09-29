@@ -1,0 +1,14 @@
+@import "../scss/colors.scss";
+@import "../scss/variables.scss";
+@import "../scss/mixins.scss";
+
+.cnt-not-found-message {
+	background-color: $color-7;
+	padding: $space-3;
+	margin-top: $space-3;
+	border-radius: $space-0;
+
+	.btn-redirect {
+		@include btn-redirect;
+	}
+}

@@ -1,0 +1,25 @@
+@import "../scss/variables.scss";
+@import "../scss/mixins.scss";
+
+.cnt-session-bar {
+	@include session-bar;
+
+	.logo {
+		margin-right: $space-3;
+	}
+	.form-session-bar {
+		min-width: 800px;
+		display: inline-flex;
+
+		input {
+			@include searchInput;
+		}
+
+		button {
+			border: 0;
+			cursor: pointer;
+			background: $color-4;
+			padding: $space-1;
+		}
+	}
+}

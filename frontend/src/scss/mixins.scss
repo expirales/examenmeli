@@ -1,0 +1,44 @@
+@import "./variables.scss";
+@import "./colors.scss";
+
+@mixin session-bar {
+	height: $height-session-bar;
+	background-color: $color-1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin searchInput {
+	width: 100%;
+	border-top-left-radius: $space-0;
+	border-bottom-left-radius: $space-0;
+	border: 0;
+	padding: $space-1 $space-0 $space-1 $space-2;
+	outline: none;
+	font-size: $font-size-4;
+}
+
+@mixin btn-buy {
+	background-color: $color-6;
+	padding: $space-1;
+	color: $color-7;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	border-radius: $space-0;
+	width: 100%;
+}
+
+@mixin font-styles($font-size, $font-weight) {
+	font-size: $font-size;
+	font-weight: $font-weight;
+}
+
+@mixin btn-redirect {
+	border: 0;
+	cursor: pointer;
+	font-size: $font-size-2;
+	border-radius: $space-0;
+	padding: $space-1;
+}
